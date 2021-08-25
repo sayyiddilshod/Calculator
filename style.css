@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(155, 152, 152);
+}
+
+.screen{
+    height: 40%;
+}
+
+.showScreen{
+    /* border: 1px solid rgb(161, 159, 159); */
+    border-bottom: none;
+    height: 80%;
+    padding: 0 20px;
+    position: relative;
+}
+
+.show{
+    position: absolute;
+    margin-left: 20px;
+    right: 20px;
+    top: 50px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(7, 121, 228);
+}
+
+.result{
+    position: absolute;
+    margin-left: 20px;
+    right: 20px;
+    bottom: 10px;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: grey;
+}
+
+.bottomScreen{
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(112, 111, 111);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    /* border-left: 1px solid rgb(161, 159, 159);
+    border-right: 1px solid rgb(161, 159, 159); */
+}
+
+
+.fa-backspace{
+    color: rgb(7, 121, 228);
+}
+.buttons{
+    height: 60%;
+    display: grid;
+    grid-template: repeat(5, 20%) / repeat(4, 75px);
+}
+.buttons span{
+    border: 1px solid rgb(214, 212, 212);
+    font-size: 29px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(73, 72, 72);
+}
+
+.buttons span:nth-child(1){
+    color: rgb(196, 6, 6);
+    transition: 0.3s;
+}
+.buttons span:nth-child(1):hover{
+    background-color: rgb(196, 6, 6);
+    color: #fff;
+}
+
+.buttons span:nth-child(2),
+.buttons span:nth-child(3),
+.buttons span:nth-child(4),
+.buttons span:nth-child(8),
+.buttons span:nth-child(12),
+.buttons span:nth-child(16){
+    color: rgb(7, 121, 228);
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.buttons span:nth-child(2):hover,
+.buttons span:nth-child(3):hover,
+.buttons span:nth-child(4):hover,
+.buttons span:nth-child(8):hover,
+.buttons span:nth-child(12):hover,
+.buttons span:nth-child(16):hover{
+    background-color: rgb(7, 121, 228);
+    color: #fff;
+}
+
+.buttons span:nth-child(12){
+    font-size: 36px
+}
+
+.buttons span:nth-child(20){
+    color: #fff;
+    background-color: rgb(7, 121, 228);
+}
+
+
+
+
+
+.buttons span:nth-child(5),
+.buttons span:nth-child(6),
+.buttons span:nth-child(7),
+.buttons span:nth-child(9),
+.buttons span:nth-child(10),
+.buttons span:nth-child(11),
+.buttons span:nth-child(13),
+.buttons span:nth-child(14),
+.buttons span:nth-child(15),
+.buttons span:nth-child(17),
+.buttons span:nth-child(18),
+.buttons span:nth-child(19){
+    transition: 0.3s;
+}
+
+
+
+.buttons span:nth-child(5):hover,
+.buttons span:nth-child(6):hover,
+.buttons span:nth-child(7):hover,
+.buttons span:nth-child(9):hover,
+.buttons span:nth-child(10):hover,
+.buttons span:nth-child(11):hover,
+.buttons span:nth-child(13):hover,
+.buttons span:nth-child(14):hover,
+.buttons span:nth-child(15):hover,
+.buttons span:nth-child(17):hover,
+.buttons span:nth-child(18):hover,
+.buttons span:nth-child(19):hover{
+    background-color: rgb(73, 72, 72);
+    color: #fff;
+}
